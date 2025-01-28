@@ -1,0 +1,359 @@
+<html>
+<head>
+<style>
+/* THEME COLORS */
+:root {
+  --paleGrey: #E3E3E3;
+  --darkGrey: rgba(67,67,67,100%);
+  --darkGreyBG: rgba(67,67,67,60%);
+  --transparent: rgba(0,0,0,0%);
+  --color_3: #111111;
+  --accent: #9fad94;
+  --accent_2: #353f37;
+}
+
+/*-----------------------------------------------------------*/
+/* BACKGROUND */
+/*-----------------------------------------------------------*/
+/* Background */
+.content__background[data-v-a83c0f1e]{
+    content: url("https://i.imgur.com/ruSHs7O.png") !important;
+	height:unset;
+	width:unset;
+}
+.content__main[data-v-a83c0f1e] {
+	background: var(--darkGrey);
+	border-radius: 0rem;
+	min-width:18rem;
+	color: var(--paleGrey);
+	max-width:60rem;
+	padding: 1rem 0rem 5rem 0rem;
+	border-radius: 6rem !important;
+}
+/*-----------------------------------------------------------*/
+/* NAVIGATION BARS */
+/*-----------------------------------------------------------*/
+.navigation__main[data-v-6ddd5896], .navigation__side[data-v-6ddd5896],.navigation__links[data-v-6ddd5896], .navigation__main[data-v-6ddd5896]>ul, .navigation__time p[data-v-6ddd5896] p {
+	color: rgba(227, 227, 227, 1);
+	font-weight:400;
+}
+.navigation__main[data-v-6ddd5896],.navigation__links[data-v-6ddd5896], .navigation__side[data-v-6ddd5896], .navigation__main[data-v-6ddd5896]>ul {
+	background: rgba(67, 67, 67, 1);
+	font-weight:400;
+}
+.navigation__links[data-v-6ddd5896]>a, .dropdown__trigger[data-v-061f812a], .navigation__funds[data-v-6ddd5896], .dropdown__link[data-v-af3be4c8]{
+	color: rgba(227, 227, 227, 1);
+}
+@media (min-width: 1280px) {
+    .navigation__main[data-v-6ddd5896]>ul {
+        background: rgba(13, 13, 13, 0) !important;
+    }
+}
+.navigation__side[data-v-6ddd5896] ul, .navigation__icon[data-v-6ddd5896] {
+    filter: brightness(125%);
+}
+.navigation__side[data-v-6ddd5896], .navigation__tools[data-v-6ddd5896] {
+    filter: saturate(0);
+}
+@media (min-width: 1280px) {
+	.dropdown__link[data-v-af3be4c8] {
+    background-color: transparent;
+    box-shadow: 0 0 transparent;
+	}
+}
+.dropdown__element[data-v-061f812a]{
+	background-color: rgba(13,13,13,0.5);
+	box-shadow: 0 0 transparent;
+}
+.dropdown__link[data-v-af3be4c8]:hover{
+	background-color:transparent;
+}
+.navigation__home[data-v-6ddd5896] img{
+	margin-top: 0rem;
+}
+.navigation__home[data-v-6ddd5896]{
+	background-color: rgba(67, 67, 67, 1);
+	border-width:0px;
+}
+/*-----------------------------------------------------------*/
+/* UNIVERSAL */
+/*-----------------------------------------------------------*/
+.horse__image[data-v-4dae0a9d] {
+	max-width: 100%;
+    background-position-x: left;
+	background-position-y: top;
+    position: absolute;
+    z-index: 0;
+    grid-area: photo;
+    background-repeat: no-repeat;
+    top: 0px;
+    left: 0px;
+    max-height: 1200px;
+    aspect-ratio: unset;
+    width: 100%;
+    height: 100%;
+}
+/* sims 3 or sims 4 icon */
+.horse__game[data-v-4dae0a9d]{
+	display:none;
+}
+.horse__name[data-v-4dae0a9d]{
+	font-family: "Minion Variabel Concept", Garamond, serif;
+    font-size: 2.5rem !important;
+	text-transform: lowercase;
+	font-weight:100;
+}
+.horse[data-v-4dae0a9d] {
+	margin-top:0rem;
+}
+/* Name, ID, nickname, owner */
+.horse__main-info[data-v-4dae0a9d]{
+	left:0px;
+	right:0px;
+	position:absolute;
+	z-index:2;
+	font-weight:100;
+}
+/* horse tab content*/
+.horse__content[data-v-4dae0a9d]{
+	gap:0rem;
+	grid-template-areas:'photo info';
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    min-height: 40rem;
+}
+/* horse tab switcher */
+.horse__navigation[data-v-4dae0a9d]{
+	z-index:10;
+}
+.horse__navigation[data-v-4dae0a9d]{
+	top:-4.75rem;
+	border-top-left-radius:6rem;
+	border-top-right-radius: 6rem;
+	background-color: rgba(67,67,67,1);
+}
+.horse__navigation[data-v-4dae0a9d] div.horse__tab--active[data-v-1a45995b] {
+	background-color: var(--darkGrey);
+}
+.horse__navigation[data-v-4dae0a9d] div:after {
+	display:none;
+}
+@media (min-width: 640px) {
+	.content[data-v-a83c0f1e]{
+		border-radius: 6rem !important;
+        margin: 3rem auto auto auto !important;
+	}
+}
+.tabs .tab.active[data-v-1a45995b] {
+	background-color:transparent;
+}
+.tabs .tab[data-v-1a45995b]:hover{
+	background-color:transparent;
+}
+/*-----------------------------------------------------------*/
+/* INFO */
+/*-----------------------------------------------------------*/
+.horse__information[data-v-4dae0a9d]{
+	
+	padding:1rem;
+	gap:0rem;
+	grid-area:info;
+	z-index:1;
+	margin-top:5rem;
+	background-color: var(--darkGreyBG) 
+}
+.horse__information[data-v-4dae0a9d] b{
+	text-transform:uppercase !important;
+	font-weight:100 !important;
+	
+}
+.personality__traits[data-v-4dae0a9d] p{
+	font-weight: 100 !important;
+}
+/* Personality heading */
+.horse__sub-heading[data-v-4dae0a9d] {
+	border-top-width:1px;
+	border-bottom-width:0px;
+	border-top-color: var(--paleGrey);
+	font-weight: 100;
+	padding-top:1rem;
+	padding-bottom:0rem;
+	margin-bottom:0rem;
+}
+/* personality background element */
+.personality[data-v-4dae0a9d]>div {
+	border-width: 0px;
+	background-color: transparent;
+	padding:0rem;
+}
+.personality[data-v-4dae0a9d] .personality__stats[data-v-10e7a147] {
+	border-radius: 0rem;
+	background-color: transparent;
+	--tw-shadow-color: transparent;
+}
+.personality__traits p[data-v-10e7a147] {
+	font-weight: 100 !important;
+}
+.personality[data-v-4dae0a9d] .personality__traits[data-v-10e7a147] {
+    padding: 0rem 0rem !important;
+}
+.personality[data-v-4dae0a9d] .personality__stat[data-v-10e7a147] {
+	border-width: 0px;
+}
+.personality[data-v-4dae0a9d] .personality__stat>div.dashes[data-v-41614dd1] {
+	display: none;
+}
+.personality[data-v-4dae0a9d] .personality__stat[data-v-10e7a147] span {
+	border-radius: 0rem;
+	border-width: 0px;
+	background-color: var(--paleGrey);
+}
+.horse__about[data-v-4dae0a9d]{
+	padding:1rem;
+	border-bottom-left-radius: 6rem;
+	border-bottom-right-radius: 6rem;
+	z-index: 1;
+	position: relative;
+	background-color: var(--darkGreyBG) 
+}
+.horse__heading[data-v-4dae0a9d]{
+	border-top-width:1px;
+	border-bottom-width:0px;
+	border-top-color: var(--paleGrey);
+	font-weight: 100;
+}
+@media (min-width: 640px){
+.horse__heading[data-v-4dae0a9d], .horse__sub-heading[data-v-4dae0a9d] {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+}
+.horse__info[data-v-4dae0a9d]{
+	font-weight:100;
+}
+
+/*-----------------------------------------------------------*/
+/* PEDIGREE */
+/*-----------------------------------------------------------*/
+.horse__breeding[data-v-4dae0a9d]{
+	gap:0rem;
+	grid-area:info;
+	z-index:1;
+	margin-top:5rem;
+	background-color: var(--darkGreyBG) 
+}
+.horse__offspring[data-v-4dae0a9d]{
+	z-index:0;
+	position:relative;
+	margin-top: 1rem;
+	background-color: var(--darkGreyBG)
+}
+.horse__studbook[data-v-4dae0a9d]{
+	border-color:transparent;
+}
+.horse__approval p[data-v-4dae0a9d] {
+    font-weight: 100;
+    padding-right: 2rem;
+}
+.horse__heading[data-v-4dae0a9d]{
+    margin-top: 1rem;
+}
+/*-----------------------------------------------------------*/
+/* COMPETITION */
+/*-----------------------------------------------------------*/
+.horse__competition[data-v-4dae0a9d]{
+	gap:0rem;
+	grid-area:info;
+	z-index:1;
+	margin-top:5rem;
+	background-color: var(--darkGreyBG) 
+}
+.horse__show-history[data-v-4dae0a9d]{
+	z-index: 1;
+	position: relative;
+	max-height: 500px;
+    overflow-y: scroll;
+    background-color: var(--darkGreyBG);
+}
+.tack__type[data-v-d8b9c6f1] {
+	color: var(--paleGrey);
+}
+.tack__container[data-v-d8b9c6f1]{
+	border-width:0rem;
+	background-color: transparent;
+}
+.horse__show-dropdown select[data-v-4dae0a9d]{
+	background-color: var(--darkGreyBG);
+}
+/* show history table */
+.horse__show-history table th[data-v-4dae0a9d]{
+	border-bottom-width: 1px;
+	border-bottom-color:var(--paleGrey);
+}
+.horse__show-history table tbody tr:nth-child(even)[data-v-4dae0a9d] {
+    background-color: var(--darkGreyBG);
+}
+.horse__ammenities[data-v-4dae0a9d]{
+	border-top-color:  var(--paleGrey);
+	border-top-width: 1px;
+}
+.horse__show-overview>div[data-v-4dae0a9d]{
+	border-width:0px !important;
+}
+/*-----------------------------------------------------------*/
+/* GALLERY */
+/*-----------------------------------------------------------*/
+.horse__gallery[data-v-4dae0a9d]{
+	gap:0rem;
+	grid-area:info;
+	z-index:1;
+	margin-top:5rem;
+	background-color: var(--darkGreyBG);
+    display: unset;
+	gap: 1rem;
+	columns: 4;	
+}
+.horse__gallery>div>img[data-v-4dae0a9d] {
+    aspect-ratio: unset;
+    width: auto;
+    border-radius: .125rem;
+	margin-bottom: 20px;
+	max-width:100% !important;
+}
+--------------------------------------------------*/
+/* RETIRED DISCIPLINES */
+/*-----------------------------------------------------------*/
+.horse__retireddisciplines img{
+	width:7rem;
+}
+.horse__retiredDisciplineTables{
+	display:grid;
+	grid-template-columns: repeat(auto-fill,minmax(18rem,1fr));
+}
+/*-----------------------------------------------------------*/
+/* FOOTER */
+/*-----------------------------------------------------------*/
+footer[data-v-39e8fc57], footer p[data-v-39e8fc57] {
+    display: none;
+}
+
+/*-----------------------------------------------------------*/
+/* IMAGE REPLACEMENTS */
+/*-----------------------------------------------------------*/
+/* BP Home Icon */
+img[src$="logo.png"] {
+    content: url(https://i.imgur.com/pQU060R.png);
+}
+/* Total points shield */
+img[src$="pointsRibbon.svg"] {
+    content: url(https://i.imgur.com/CfN36V0.png);
+}
+/* Studbook Approval Stamp */
+img[src$="approval.svg"] {
+    content: url(https://i.imgur.com/AuWkzGx.png);
+}
+</style>
+</head>
+
+</html>
