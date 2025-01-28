@@ -30,26 +30,26 @@
 /*-----------------------------------------------------------*/
 /* NAVIGATION BARS */
 /*-----------------------------------------------------------*/
-.navigation__main[data-v-6ddd5896], .navigation__side[data-v-6ddd5896],.navigation__links[data-v-6ddd5896], .navigation__main[data-v-6ddd5896]>ul, .navigation__time p[data-v-6ddd5896] p {
+.navigation__main[data-v-98185d7d], .navigation__side[data-v-98185d7d],.navigation__links[data-v-98185d7d], .navigation__main[data-v-98185d7d]>ul, .navigation__time p[data-v-98185d7d] p {
 	color: rgba(227, 227, 227, 1);
 	font-weight:400;
 }
-.navigation__main[data-v-6ddd5896],.navigation__links[data-v-6ddd5896], .navigation__side[data-v-6ddd5896], .navigation__main[data-v-6ddd5896]>ul {
+.navigation__main[data-v-98185d7d],.navigation__links[data-v-98185d7d], .navigation__side[data-v-98185d7d], .navigation__main[data-v-98185d7d]>ul {
 	background: rgba(67, 67, 67, 1);
 	font-weight:400;
 }
-.navigation__links[data-v-6ddd5896]>a, .dropdown__trigger[data-v-061f812a], .navigation__funds[data-v-6ddd5896], .dropdown__link[data-v-af3be4c8]{
+.navigation__links[data-v-98185d7d]>a, .dropdown__trigger[data-v-061f812a], .navigation__funds[data-v-98185d7d], .dropdown__link[data-v-af3be4c8]{
 	color: rgba(227, 227, 227, 1);
 }
 @media (min-width: 1280px) {
-    .navigation__main[data-v-6ddd5896]>ul {
+    .navigation__main[data-v-98185d7d]>ul {
         background: rgba(13, 13, 13, 0) !important;
     }
 }
-.navigation__side[data-v-6ddd5896] ul, .navigation__icon[data-v-6ddd5896] {
+.navigation__side[data-v-98185d7d] ul, .navigation__icon[data-v-98185d7d] {
     filter: brightness(125%);
 }
-.navigation__side[data-v-6ddd5896], .navigation__tools[data-v-6ddd5896] {
+.navigation__side[data-v-98185d7d], .navigation__tools[data-v-98185d7d] {
     filter: saturate(0);
 }
 @media (min-width: 1280px) {
@@ -65,10 +65,10 @@
 .dropdown__link[data-v-af3be4c8]:hover{
 	background-color:transparent;
 }
-.navigation__home[data-v-6ddd5896] img{
+.navigation__home[data-v-98185d7d] img{
 	margin-top: 0rem;
 }
-.navigation__home[data-v-6ddd5896]{
+.navigation__home[data-v-98185d7d]{
 	background-color: rgba(67, 67, 67, 1);
 	border-width:0px;
 }
