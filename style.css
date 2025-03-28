@@ -85,10 +85,10 @@
     background-repeat: no-repeat;
     top: 0px;
     left: 0px;
-    max-height: 1200px;
     aspect-ratio: unset;
     width: 100%;
     height: 100%;
+	background-size: contain;
 }
 /* sims 3 or sims 4 icon */
 .horse__game[data-v-4dae0a9d]{
@@ -212,7 +212,7 @@
 	border-bottom-right-radius: 6rem;
 	z-index: 1;
 	position: relative;
-	background-color: var(--darkGreyBG) 
+	background-color: var(--darkGreyBG); 
 }
 .horse__heading[data-v-4dae0a9d]{
 	border-top-width:1px;
@@ -229,7 +229,111 @@
 .horse__info[data-v-4dae0a9d]{
 	font-weight:100;
 }
-
+/* this part hopefully aligns everything to a horizontal grid in very large screens */
+@media (min-width: 1900px){
+	.content[data-v-a83c0f1e]{
+		padding:3rem 2rem 2rem 7rem;
+		max-width: unset;
+	}
+	.content__main[data-v-a83c0f1e]{
+		MAX-WIDTH: unset;
+		padding: 1rem 0rem 0rem 0rem;
+		min-height: 85vh;
+	}
+	.horse[data-v-4dae0a9d] {
+		
+	}
+	.horse__main-info[data-v-4dae0a9d]{
+		
+	}
+	.horse[data-v-4dae0a9d]>div:nth-child(4){
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 35vh 50vh;
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+	}
+	.horse__image[data-v-4dae0a9d]{
+		grid-area: 1 / 1 / 3 / 3;
+		border-bottom-right-radius: 6rem;
+	}
+	.horse__content[data-v-4dae0a9d]{
+		grid-template-areas: unset;
+		min-height: unset;
+		grid-template-columns:unset;
+		grid-area: 2 / 1 / 3 / 2;
+		justify-content: normal;
+		margin-right:1rem;
+		margin-top: 0rem !important;
+	}
+	.horse__information[data-v-4dae0a9d]{
+		margin-top:unset;
+		width:unset;
+		border-width: 1px;
+        border-color: var(--darkGrey);
+		grid-area: 2 / 1 / 3 / 2;  
+		border-width: 1px;
+        border-color: var(--darkGrey);
+	}
+	.horse__about[data-v-4dae0a9d]{
+		grid-area: 1 / 2 / 3 / 3;
+		margin-top: 6rem;
+		border-bottom-left-radius: unset;
+		border-width: 1px;
+        border-color: var(--darkGrey);
+	}
+	.horse__navigation[data-v-4dae0a9d]{
+		top: -3rem;
+	}
+	div#app {
+		overflow: hidden;
+	}
+	.horse__offspring[data-v-4dae0a9d]{
+		margin-top:6rem !important;
+		grid-area: 1 / 2 / 3 / 3;
+		border-width: 1px;
+        border-color: var(--darkGrey);
+		border-bottom-left-radius: 6rem;
+	}
+	.horse__breeding[data-v-4dae0a9d] {
+		margin-top:0rem !important;
+		border-width: 1px;
+        border-color: var(--darkGrey);
+	}
+	.horse__show-history[data-v-4dae0a9d]{
+		margin-top:6rem !important;
+		max-height: 85vh !important;
+		grid-area: 1 / 2 / 3 / 3;
+		border-width: 1px;
+        border-color: var(--darkGrey);
+		border-bottom-right-radius: 6rem;
+		
+	}
+	.horse__competition[data-v-4dae0a9d]{
+		border-width: 1px;
+        border-color: var(--darkGrey);
+	}
+	.horse__gallery[data-v-4dae0a9d]{
+		min-width: calc(100vw - 11rem);
+		margin:0rem !important;
+        border-bottom-left-radius: 6rem;
+		border-bottom-right-radius: 6rem;
+		border-width: 1px;
+        border-color: var(--darkGrey);
+        padding: 1rem;
+        max-height: 45vh;
+		display: flex !important;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        overflow-y: scroll;
+		scrollbar-width: none;
+	}
+	.horse__gallery>div>img[data-v-4dae0a9d]{
+		width: 20rem !important;
+	}
+	
+}
 /*-----------------------------------------------------------*/
 /* PEDIGREE */
 /*-----------------------------------------------------------*/
@@ -269,8 +373,6 @@
 .horse__show-history[data-v-4dae0a9d]{
 	z-index: 1;
 	position: relative;
-	max-height: 500px;
-    overflow-y: scroll;
     background-color: var(--darkGreyBG);
 }
 .tack__type[data-v-d8b9c6f1] {
@@ -298,6 +400,58 @@
 .horse__show-overview>div[data-v-4dae0a9d]{
 	border-width:0px !important;
 }
+.horse__show-history>table[data-v-4dae0a9d]{
+	width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+.horse__show-history>table>thead[data-v-4dae0a9d]{
+	display:table;
+}
+.horse__show-history>table>tbody[data-v-4dae0a9d]{
+	overflow-y:scroll;
+	scrollbar-width:none;
+	max-height: 74.25vh;
+    border-bottom-right-radius: 6rem;
+}
+.horse__show-history>table>thead>tr th:nth-child(1){
+	width:30%;
+	text-align: left;
+}
+.horse__show-history>table>thead>tr th:nth-child(2){
+	width:20%;
+}
+.horse__show-history>table>thead>tr th:nth-child(3){
+	width:20%;
+}
+.horse__show-history>table>thead>tr th:nth-child(4){
+	width:10%;
+}
+.horse__show-history>table>thead>tr th:nth-child(5){
+	width:10%;
+}
+.horse__show-history>table>thead>tr th:nth-child(6){
+	width:10%;
+}
+.horse__show-history>table>tbody>tr td:nth-child(1){
+	width:30%!IMPORTANT;
+}
+.horse__show-history>table>tbody>tr td:nth-child(2){
+	width:20%!IMPORTANT;
+}
+.horse__show-history>table>tbody>tr td:nth-child(3){
+	width:25%!IMPORTANT;
+}
+.horse__show-history>table>tbody>tr td:nth-child(4){
+	width:10%!IMPORTANT;
+}
+.horse__show-history>table>tbody>tr td:nth-child(5){
+	width:20%!IMPORTANT;
+}
+.horse__show-history>table>tbody>tr td:nth-child(6){
+	width:10%!IMPORTANT;
+}
+
 /*-----------------------------------------------------------*/
 /* GALLERY */
 /*-----------------------------------------------------------*/
